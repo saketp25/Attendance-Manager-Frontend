@@ -1,0 +1,74 @@
+.heading{
+    text-align: center;
+    margin:2vmax 0;
+}
+
+.class{
+    padding: 5vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.class>div>div>h3{
+    text-align: center;
+}
+.class>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:2vmin;
+}
+.class>div{
+    box-shadow: 2px 2px 4px gray;
+    margin: 5px;
+    padding: 5px;
+    min-width: 200px;
+    background-color: rgb(99, 66, 66);
+}
+.btn{
+    padding: 3px;
+    border: 1px solid gray;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 4px gray;
+}
+
+
+
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+
+
+
+
+.newClass>a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.newClass>a>div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(64, 129, 129);
+    box-shadow: 3px 3px 6px;
+}
+.newClass>a>div:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px;   
+}

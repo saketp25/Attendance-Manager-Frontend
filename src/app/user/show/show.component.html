@@ -1,0 +1,23 @@
+<div class="heading">
+    <h1>Class : {{className}}</h1>
+    <h2>Total Classes: {{total}}</h2>
+</div>
+<div class="addStudent">
+    <a routerLink="/user/addstudent"><p>+ Add Students</p></a>
+</div>
+<div class="card">
+    <div class="tbHead">
+        <p>Name</p>
+        <p>Roll No.</p>
+        <p>Attendance</p>
+        <p>Attendance %</p>
+    </div>
+    <div *ngFor="let a of datas">
+        <div class="tbRow">
+            <p>{{a.name}}</p>
+            <p>{{a.roll}}</p>
+            <p>{{a.count}}</p>
+            <p>{{a.percentage}}</p>
+        </div>
+    </div>
+</div>

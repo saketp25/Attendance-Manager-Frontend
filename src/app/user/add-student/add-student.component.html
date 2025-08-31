@@ -1,0 +1,37 @@
+<div *ngIf="isAlert" class="alert">
+    <div >
+        <p class="wrongMsg">{{alertMsg}}</p>
+        <p class="ok" (click)="removeAlert()">Okay</p>
+    </div>
+</div>
+
+<div class="card">
+    <div>
+        <form (ngSubmit)="saveStudents()">
+            <div>
+                <p>import from csv :</p>
+                <input type="file" (change)="onSelect($event)" >
+            </div>
+            <div>
+                <div>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" [(ngModel)]="formData.name" name="name">
+                </div>
+                <div>
+                    <label for="roll">Roll No. :</label>
+                    <input type="text" id="roll" [(ngModel)]="formData.roll" name="roll">
+                </div>
+                <div>
+                    <label for="total">Attendance Count :</label>
+                    <input type="number" id="total" [(ngModel)]="formData.count" name="total">
+                </div>
+                <button type="submit">Save Students</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div *ngIf="loading" class="spinner-overlay">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Saving...</span>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+
+<h1 class="heading">Welcome {{user}}</h1>
+<div class="class">
+    <div *ngFor="let a of allClasses">
+          <div>
+            <h3>{{a.className}}</h3>
+          </div>
+          <div>
+            <p>Date Created :</p>
+            <p>{{a.dateCreated}}</p>
+          </div>
+          <div>
+            <p class="btn" (click)="showAttendance(a)">show</p>
+            <p class="btn" (click)="takeAttendance(a._id,a.className,a.Total)">Take Attendance</p>
+          </div>
+    </div>
+ 
+</div>
+
+
+
+<div class="newClass">
+  <a routerLink="/user/addclass">
+    <div>
+      <p>+</p>
+      <p>Add New Class</p>
+    </div>
+  </a>
+</div>
+
+<div *ngIf="loading" class="spinner-overlay">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>

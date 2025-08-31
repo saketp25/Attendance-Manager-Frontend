@@ -1,0 +1,93 @@
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh;
+}
+.home>div{
+    padding: 3rem 0;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px rgb(80, 80, 175);
+}
+.home>div>h3{
+    text-align: center;
+}
+.home>div>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.home>div>form>div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    margin: 20px;
+    font-size: 3vmin;
+}
+.home>div>form>div>input{
+    background-color: rgb(84 163 163 / 50%);
+    height: 3vmin;
+    padding: 0 5px;
+}
+button{
+    background-color: #536d7d;
+    font-size: 3.5vmin;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: gray;
+    animation: animate 1s ease-out forwards;
+}
+@keyframes animate {
+    form{
+    }
+    to{
+        background-color: rgb(7, 114, 177);
+    }
+}
+.alert{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+}
+.alert>div{
+    padding: 10px;
+    background-color: rgb(186, 201, 186);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 50vmin;
+}
+.msg{
+    font-size: 5vmax;
+    color: green;
+}
+.wrongMsg{
+    font-size: 5vmax;
+    color: rgb(121, 15, 15);
+}
+.ok{
+    padding: 3px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.register{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 5px;
+}
+.home>div>form>a{
+    text-decoration: none;
+}
